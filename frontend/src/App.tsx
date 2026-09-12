@@ -9,6 +9,7 @@ import Assignments from './pages/lms/Assignments';
 import Examinations from './pages/academics/Examinations';
 import Fees from './pages/finance/Fees';
 import InfrastructureDashboard from './pages/infrastructure/InfrastructureDashboard';
+import Placements from './pages/corporate/Placements';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="examinations" element={<Examinations />} />
           <Route path="fees" element={<Fees />} />
           <Route path="infrastructure" element={<InfrastructureDashboard />} />
+          <Route path="placements" element={<Placements />} />
           {/* Add more nested routes here in the future */}
         </Route>
         

@@ -9,3 +9,4 @@ from app.models.lms import CourseModule, LearningMaterial, Assignment, Assignmen
 from app.models.examination import Exam, ExamSchedule, ExamResult, ExamType
 from app.models.finance import FeeStructure, FeeInvoice, FeePayment, Scholarship, StudentScholarship, FeeTypeEnum, PaymentStatusEnum
 from app.models.infrastructure import LibraryBook, BookIssue, Hostel, HostelRoom, RoomAllocation, TransportRoute, TransportAllocation, BookStatusEnum
+from app.models.corporate import Company, JobPosting, PlacementApplication, UniversityEvent, JobTypeEnum, ApplicationStatusEnum

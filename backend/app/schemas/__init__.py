@@ -27,3 +27,9 @@ from .infrastructure import (
     HostelBase, HostelCreate, HostelResponse,
     TransportRouteBase, TransportRouteCreate, TransportRouteResponse
 )
+from .corporate import (
+    CompanyBase, CompanyCreate, CompanyResponse,
+    JobPostingBase, JobPostingCreate, JobPostingResponse,
+    PlacementApplicationBase, PlacementApplicationCreate, PlacementApplicationResponse,
+    UniversityEventBase, UniversityEventCreate, UniversityEventResponse
+)
