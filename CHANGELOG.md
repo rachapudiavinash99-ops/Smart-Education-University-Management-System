@@ -6,3 +6,4 @@
 - Improve test coverage in communication
 - Optimize database queries in finance
 - Update docstrings in corporate
+- Add unit test stubs for corporate
