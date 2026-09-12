@@ -17,3 +17,8 @@ from .examination import (
     ExamScheduleBase, ExamScheduleCreate, ExamScheduleResponse,
     ExamResultBase, ExamResultCreate, ExamResultResponse
 )
+from .finance import (
+    FeeStructureBase, FeeStructureCreate, FeeStructureResponse,
+    FeeInvoiceBase, FeeInvoiceCreate, FeeInvoiceResponse,
+    FeePaymentBase, FeePaymentCreate, FeePaymentResponse
+)

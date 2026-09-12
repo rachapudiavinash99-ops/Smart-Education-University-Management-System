@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, Users, BookOpen, LogOut, Building2, CalendarCheck, FileText, Award } from 'lucide-react';
+import { LayoutDashboard, Users, BookOpen, LogOut, Building2, CalendarCheck, FileText, Award, CreditCard } from 'lucide-react';
 
 const DashboardLayout = () => {
   const navigate = useNavigate();
@@ -41,6 +41,10 @@ const DashboardLayout = () => {
           <Link to="/dashboard/examinations" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
             <Award size={20} />
             <span>Examinations</span>
+          </Link>
+          <Link to="/dashboard/fees" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
+            <CreditCard size={20} />
+            <span>Fees & Payments</span>
           </Link>
           <Link to="/dashboard/courses" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
             <BookOpen size={20} />

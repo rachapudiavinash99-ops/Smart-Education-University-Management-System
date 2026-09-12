@@ -7,6 +7,7 @@ import Campuses from './pages/university/Campuses';
 import Attendance from './pages/academics/Attendance';
 import Assignments from './pages/lms/Assignments';
 import Examinations from './pages/academics/Examinations';
+import Fees from './pages/finance/Fees';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="attendance" element={<Attendance />} />
           <Route path="assignments" element={<Assignments />} />
           <Route path="examinations" element={<Examinations />} />
+          <Route path="fees" element={<Fees />} />
           {/* Add more nested routes here in the future */}
         </Route>
         
