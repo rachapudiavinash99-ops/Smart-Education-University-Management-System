@@ -49,3 +49,4 @@
 - Standardize variable naming in finance
 - Optimize database queries in auth
 - Add unit test stubs for security
+- Add comments explaining complex logic in university
