@@ -13,6 +13,9 @@ import Placements from './pages/corporate/Placements';
 import Notifications from './pages/communication/Notifications';
 import SecurityAudit from './pages/security/SecurityAudit';
 
+import Students from './pages/students/Students';
+import Courses from './pages/courses/Courses';
+
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +25,8 @@ function App() {
         
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
+          <Route path="students" element={<Students />} />
+          <Route path="courses" element={<Courses />} />
           <Route path="campuses" element={<Campuses />} />
           <Route path="attendance" element={<Attendance />} />
           <Route path="assignments" element={<Assignments />} />
