@@ -115,3 +115,4 @@
 - Refine UI responsiveness in corporate
 - Refactor styling in infrastructure components
 - Standardize variable naming in university
+- Refactor styling in analytics components
