@@ -109,3 +109,4 @@
 - Refactor faculty module for better performance
 - Add unit test stubs for examination
 - Enhance security checks in corporate
+- Fix minor linting issues in attendance
