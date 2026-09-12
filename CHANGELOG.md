@@ -9,3 +9,4 @@
 - Add unit test stubs for corporate
 - Enhance logging for Dashboard
 - Update error handling in academics
+- Fix minor linting issues in corporate
