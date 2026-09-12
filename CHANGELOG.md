@@ -116,3 +116,4 @@
 - Refactor styling in infrastructure components
 - Standardize variable naming in university
 - Refactor styling in analytics components
+- Update dependency configurations for Sidebar
