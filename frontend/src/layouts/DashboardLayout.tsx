@@ -31,8 +31,8 @@ const DashboardLayout = () => {
       {/* Animated Sidebar - Charcoal Black with Gold/Amber Accents */}
       <aside className="w-64 bg-gradient-to-b from-gray-900 via-gray-800 to-black text-gray-300 shadow-2xl flex flex-col transition-all duration-300 border-r border-gray-800">
         <div className="p-5 border-b border-gray-800 flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center animate-pulse border border-amber-500/30">
-            <BookOpen size={24} className="text-amber-500" />
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-lg border-2 border-amber-500 p-1">
+            <img src="/logo.png" alt="University Logo" className="w-full h-full object-contain" />
           </div>
           <h1 className="text-xl font-bold tracking-wider text-white">Univ<span className="font-light text-amber-500">Manage</span></h1>
         </div>
