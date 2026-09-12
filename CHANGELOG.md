@@ -156,3 +156,4 @@
 - Fix typo in academics documentation
 - Improve API response formatting in Campuses
 - Enhance security checks in communication
+- Add type hints to finance components
