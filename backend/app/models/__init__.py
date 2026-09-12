@@ -5,3 +5,4 @@ from app.models.student import StudentProfile
 from app.models.academics import Subject, Section, Classroom, Timetable
 from app.models.faculty import FacultyProfile
 from app.models.attendance import Attendance, AttendanceStatus
+from app.models.lms import CourseModule, LearningMaterial, Assignment, AssignmentSubmission, AssignmentStatus, SubmissionStatus

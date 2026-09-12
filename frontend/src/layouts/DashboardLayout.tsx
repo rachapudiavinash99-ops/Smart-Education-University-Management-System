@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, Users, BookOpen, LogOut, Building2, CalendarCheck } from 'lucide-react';
+import { LayoutDashboard, Users, BookOpen, LogOut, Building2, CalendarCheck, FileText } from 'lucide-react';
 
 const DashboardLayout = () => {
   const navigate = useNavigate();
@@ -33,6 +33,10 @@ const DashboardLayout = () => {
           <Link to="/dashboard/attendance" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
             <CalendarCheck size={20} />
             <span>Attendance</span>
+          </Link>
+          <Link to="/dashboard/assignments" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
+            <FileText size={20} />
+            <span>Assignments</span>
           </Link>
           <Link to="/dashboard/courses" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
             <BookOpen size={20} />
