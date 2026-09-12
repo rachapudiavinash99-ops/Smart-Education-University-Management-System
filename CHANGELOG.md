@@ -123,3 +123,4 @@
 - Refactor Campuses module for better performance
 - Update Swagger schema for academics
 - Add comments explaining complex logic in lms
+- Refactor Dashboard module for better performance
