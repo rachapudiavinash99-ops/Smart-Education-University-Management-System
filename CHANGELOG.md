@@ -95,3 +95,4 @@
 - Optimize database queries in Campuses
 - Update error handling in infrastructure
 - Add comments explaining complex logic in Campuses
+- Update docstrings in lms
