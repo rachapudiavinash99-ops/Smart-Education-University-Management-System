@@ -25,3 +25,4 @@
 - Improve test coverage in analytics
 - Add unit test stubs for finance
 - Clean up unused imports in infrastructure
+- Add type hints to Sidebar components
