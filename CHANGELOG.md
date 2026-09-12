@@ -133,3 +133,4 @@
 - Update error handling in security
 - Refactor styling in Login components
 - Standardize variable naming in faculty
+- Fix typo in academics documentation
