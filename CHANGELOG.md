@@ -41,3 +41,4 @@
 - Refine UI responsiveness in lms
 - Refactor styling in corporate components
 - Standardize variable naming in attendance
+- Improve test coverage in finance
