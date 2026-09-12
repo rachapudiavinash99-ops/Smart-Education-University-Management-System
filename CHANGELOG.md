@@ -174,3 +174,4 @@
 - Update docstrings in auth
 - Update Swagger schema for infrastructure
 - Refactor infrastructure module for better performance
+- Fix minor linting issues in infrastructure
