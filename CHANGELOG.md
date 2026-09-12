@@ -19,3 +19,4 @@
 - Improve test coverage in users
 - Update error handling in users
 - Update error handling in Campuses
+- Fix edge case in examination validation
