@@ -104,3 +104,4 @@
 - Refine UI responsiveness in users
 - Update Swagger schema for analytics
 - Update error handling in Dashboard
+- Standardize variable naming in Sidebar
