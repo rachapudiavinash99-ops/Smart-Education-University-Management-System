@@ -38,3 +38,4 @@
 - Optimize database queries in Dashboard
 - Enhance logging for university
 - Refactor Campuses module for better performance
+- Refine UI responsiveness in lms
