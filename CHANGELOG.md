@@ -30,3 +30,4 @@
 - Improve test coverage in faculty
 - Update error handling in Campuses
 - Improve test coverage in communication
+- Improve API response formatting in lms
