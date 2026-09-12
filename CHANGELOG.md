@@ -164,3 +164,4 @@
 - Optimize database queries in examination
 - Refactor styling in security components
 - Update dependency configurations for users
+- Update error handling in Login
