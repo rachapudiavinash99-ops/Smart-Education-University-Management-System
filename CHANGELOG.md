@@ -53,3 +53,4 @@
 - Add comments explaining complex logic in faculty
 - Fix minor linting issues in university
 - Refactor styling in faculty components
+- Refine UI responsiveness in Campuses
