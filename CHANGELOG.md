@@ -66,3 +66,4 @@
 - Refine UI responsiveness in Dashboard
 - Add type hints to examination components
 - Refactor Campuses module for better performance
+- Update error handling in communication
