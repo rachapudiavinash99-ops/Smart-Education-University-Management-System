@@ -129,3 +129,4 @@
 - Fix minor linting issues in examination
 - Standardize variable naming in auth
 - Update dependency configurations for infrastructure
+- Standardize variable naming in corporate
