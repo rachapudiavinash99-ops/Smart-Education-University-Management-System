@@ -78,3 +78,4 @@
 - Enhance security checks in users
 - Fix typo in auth documentation
 - Update error handling in examination
+- Update error handling in university
