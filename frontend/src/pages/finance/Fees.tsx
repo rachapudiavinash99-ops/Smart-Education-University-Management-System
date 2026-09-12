@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CreditCard, Plus, Receipt, AlertCircle } from 'lucide-react';
 
 const Fees = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [invoices, setInvoices] = useState([
     { id: 1, invoiceNo: 'INV-A1B2C3D4', student: 'Aarav Patel (CS20-001)', total: 50000, paid: 50000, status: 'PAID', due: '2024-01-15' },
     { id: 2, invoiceNo: 'INV-X9Y8Z7W6', student: 'Priya Sharma (CS20-002)', total: 50000, paid: 25000, status: 'PARTIAL', due: '2024-01-15' },
@@ -29,7 +30,7 @@ const Fees = () => {
           <button className="bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white px-4 py-2 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 flex items-center">
             <Receipt size={18} className="mr-1" /> View Payments
           </button>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 flex items-center">
+          <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 flex items-center" onClick={() => setIsModalOpen(true)}>
             <Plus size={18} className="mr-1" /> Generate Invoice
           </button>
         </div>
@@ -78,6 +79,32 @@ const Fees = () => {
           </tbody>
         </table>
       </div>
+
+      {/* Dynamic Action Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-md p-6">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Generate Invoice</h3>
+            <p className="text-gray-500 dark:text-gray-400 mb-6">
+              This form module is currently in read-only mode for this demo.
+            </p>
+            <div className="flex justify-end space-x-3">
+              <button 
+                onClick={() => setIsModalOpen(false)}
+                className="px-4 py-2 bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white rounded-md hover:bg-gray-300 dark:hover:bg-gray-600"
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={() => setIsModalOpen(false)}
+                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

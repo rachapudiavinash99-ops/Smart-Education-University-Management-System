@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Bell, Megaphone, MessageSquare, Clock } from 'lucide-react';
 
 const Notifications = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('announcements');
 
   const announcements = [
@@ -40,7 +41,7 @@ const Notifications = () => {
                 {activeTab === 'announcements' ? 'Recent Announcements' : 'Your Messages'}
               </h4>
               {activeTab === 'announcements' && (
-                <button className="text-sm bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded">New Broadcast</button>
+                <button className="text-sm bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded" onClick={() => setIsModalOpen(true)}>New Broadcast</button>
               )}
             </div>
 
@@ -72,6 +73,32 @@ const Notifications = () => {
           </div>
         </div>
       </div>
+
+      {/* Dynamic Action Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-md p-6">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">New Broadcast</h3>
+            <p className="text-gray-500 dark:text-gray-400 mb-6">
+              This form module is currently in read-only mode for this demo.
+            </p>
+            <div className="flex justify-end space-x-3">
+              <button 
+                onClick={() => setIsModalOpen(false)}
+                className="px-4 py-2 bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white rounded-md hover:bg-gray-300 dark:hover:bg-gray-600"
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={() => setIsModalOpen(false)}
+                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

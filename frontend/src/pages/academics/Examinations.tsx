@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Award, Plus, FileText, CheckCircle } from 'lucide-react';
 
 const Examinations = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [exams, setExams] = useState([
     { id: 1, name: 'B.Tech Even Semester Finals', type: 'SEMESTER', semester: 'Even Semester 2024', status: 'Draft' },
     { id: 2, name: 'MBA Odd Semester Finals', type: 'SEMESTER', semester: 'Odd Semester 2024', status: 'Published' },
@@ -18,7 +19,7 @@ const Examinations = () => {
         <h3 className="text-2xl font-semibold text-gray-800 dark:text-white flex items-center">
           <Award className="mr-2" /> Examinations
         </h3>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 flex items-center">
+        <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 flex items-center" onClick={() => setIsModalOpen(true)}>
           <Plus size={18} className="mr-1" /> Create Exam
         </button>
       </div>
@@ -58,6 +59,32 @@ const Examinations = () => {
           </tbody>
         </table>
       </div>
+
+      {/* Dynamic Action Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-md p-6">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Create Exam</h3>
+            <p className="text-gray-500 dark:text-gray-400 mb-6">
+              This form module is currently in read-only mode for this demo.
+            </p>
+            <div className="flex justify-end space-x-3">
+              <button 
+                onClick={() => setIsModalOpen(false)}
+                className="px-4 py-2 bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white rounded-md hover:bg-gray-300 dark:hover:bg-gray-600"
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={() => setIsModalOpen(false)}
+                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
