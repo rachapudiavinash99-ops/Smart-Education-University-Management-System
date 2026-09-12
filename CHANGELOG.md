@@ -128,3 +128,4 @@
 - Update dependency configurations for auth
 - Fix minor linting issues in examination
 - Standardize variable naming in auth
+- Update dependency configurations for infrastructure
