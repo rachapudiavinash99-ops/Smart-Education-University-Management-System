@@ -81,3 +81,4 @@
 - Update error handling in university
 - Fix typo in analytics documentation
 - Refine UI responsiveness in auth
+- Add type hints to communication components
