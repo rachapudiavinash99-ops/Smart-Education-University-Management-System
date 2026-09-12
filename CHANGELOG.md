@@ -145,3 +145,4 @@
 - Refactor styling in finance components
 - Clean up unused imports in Login
 - Fix typo in academics documentation
+- Fix minor linting issues in corporate
