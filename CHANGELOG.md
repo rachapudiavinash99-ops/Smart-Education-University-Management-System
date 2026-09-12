@@ -55,3 +55,4 @@
 - Refactor styling in faculty components
 - Refine UI responsiveness in Campuses
 - Improve test coverage in infrastructure
+- Fix edge case in attendance validation
