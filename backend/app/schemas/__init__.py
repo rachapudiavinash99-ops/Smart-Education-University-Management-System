@@ -38,3 +38,7 @@ from .communication import (
     NotificationBase, NotificationCreate, NotificationResponse,
     DirectMessageBase, DirectMessageCreate, DirectMessageResponse
 )
+from .security import (
+    AuditLogBase, AuditLogCreate, AuditLogResponse,
+    BlockedIPBase, BlockedIPCreate, BlockedIPResponse
+)

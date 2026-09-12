@@ -11,6 +11,7 @@ import Fees from './pages/finance/Fees';
 import InfrastructureDashboard from './pages/infrastructure/InfrastructureDashboard';
 import Placements from './pages/corporate/Placements';
 import Notifications from './pages/communication/Notifications';
+import SecurityAudit from './pages/security/SecurityAudit';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="infrastructure" element={<InfrastructureDashboard />} />
           <Route path="placements" element={<Placements />} />
           <Route path="communications" element={<Notifications />} />
+          <Route path="security" element={<SecurityAudit />} />
           {/* Add more nested routes here in the future */}
         </Route>
         

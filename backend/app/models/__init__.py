@@ -11,3 +11,4 @@ from app.models.finance import FeeStructure, FeeInvoice, FeePayment, Scholarship
 from app.models.infrastructure import LibraryBook, BookIssue, Hostel, HostelRoom, RoomAllocation, TransportRoute, TransportAllocation, BookStatusEnum
 from app.models.corporate import Company, JobPosting, PlacementApplication, UniversityEvent, JobTypeEnum, ApplicationStatusEnum
 from app.models.communication import Announcement, Notification, DirectMessage, PriorityEnum
+from app.models.security import AuditLog, UserSession, BlockedIP
