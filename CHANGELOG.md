@@ -183,3 +183,4 @@
 - Improve test coverage in Campuses
 - Update Swagger schema for lms
 - Update error handling in users
+- Fix edge case in academics validation
