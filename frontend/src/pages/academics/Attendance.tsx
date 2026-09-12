@@ -85,14 +85,35 @@ const Attendance = () => {
             <tr>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Roll No</th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Student Name</th>
+              <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Monthly %</th>
               <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Mark Status</th>
+              <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Actions</th>
             </tr>
           </thead>
           <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-            {activeStudents.map((student) => (
+            {activeStudents.map((student) => {
+              const monthlyAttendance = 60 + (student.id * 7 % 40); // Generate deterministic pseudo-random %
+              
+              const downloadReport = () => {
+                const csvContent = "data:text/csv;charset=utf-8,Date,Status\\n2026-09-01,PRESENT\\n2026-09-02,PRESENT\\n2026-09-03,ABSENT\\n2026-09-04,LATE\\n";
+                const encodedUri = encodeURI(csvContent);
+                const link = document.createElement("a");
+                link.setAttribute("href", encodedUri);
+                link.setAttribute("download", `${student.name.replace(' ', '_')}_Monthly_Attendance.csv`);
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              };
+
+              return (
               <tr key={student.id} className="hover:bg-gray-50 dark:hover:bg-gray-700/50">
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">{student.roll}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400 font-medium">{student.name}</td>
+                <td className="px-6 py-4 whitespace-nowrap text-center">
+                  <span className={`px-2 py-1 text-xs font-bold rounded-full ${monthlyAttendance >= 75 ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                    {monthlyAttendance}%
+                  </span>
+                </td>
                 <td className="px-6 py-4 whitespace-nowrap flex justify-center space-x-2">
                   <button 
                     onClick={() => markAttendance(student.id, 'PRESENT')}
@@ -113,8 +134,13 @@ const Attendance = () => {
                     <Clock size={24} />
                   </button>
                 </td>
+                <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <button onClick={downloadReport} className="text-blue-600 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300">
+                    Download
+                  </button>
+                </td>
               </tr>
-            ))}
+            )})}
           </tbody>
         </table>
         <div className="p-4 border-t border-gray-200 dark:border-gray-700 flex justify-end">
