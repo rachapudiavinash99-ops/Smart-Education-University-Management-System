@@ -4,8 +4,10 @@ import { Building2, Plus } from 'lucide-react';
 const Campuses = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [campuses, setCampuses] = useState([
-    { id: 1, name: 'Main Campus', city: 'Metropolis', status: 'Active' },
-    { id: 2, name: 'North Campus', city: 'Gotham', status: 'Active' },
+    { id: 1, name: 'Main Campus', city: 'Hyderabad', status: 'Active' },
+    { id: 2, name: 'North Campus', city: 'Delhi', status: 'Active' },
+    { id: 3, name: 'Tech Park Campus', city: 'Bangalore', status: 'Active' },
+    { id: 4, name: 'Commerce & Arts Wing', city: 'Mumbai', status: 'Under Maintenance' },
   ]);
 
   return (
