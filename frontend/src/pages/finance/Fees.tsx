@@ -51,7 +51,7 @@ const Fees = () => {
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">{inv.invoiceNo}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">{inv.student}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white">
-                  ${inv.paid} / ${inv.total}
+                  ₹{inv.paid} / ₹{inv.total}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">{inv.due}</td>
                 <td className="px-6 py-4 whitespace-nowrap">

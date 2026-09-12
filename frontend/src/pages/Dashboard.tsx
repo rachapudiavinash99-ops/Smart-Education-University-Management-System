@@ -6,7 +6,7 @@ const Dashboard = () => {
     { title: 'Total Students', value: '4,521', icon: Users, color: 'text-blue-500', bg: 'bg-blue-100 dark:bg-blue-900/30' },
     { title: 'Faculty Members', value: '312', icon: GraduationCap, color: 'text-green-500', bg: 'bg-green-100 dark:bg-green-900/30' },
     { title: 'Total Campuses', value: '4', icon: Building2, color: 'text-purple-500', bg: 'bg-purple-100 dark:bg-purple-900/30' },
-    { title: 'Revenue (YTD)', value: '$2.4M', icon: DollarSign, color: 'text-yellow-500', bg: 'bg-yellow-100 dark:bg-yellow-900/30' },
+    { title: 'Revenue (YTD)', value: '₹2.4M', icon: DollarSign, color: 'text-yellow-500', bg: 'bg-yellow-100 dark:bg-yellow-900/30' },
     { title: 'Library Books', value: '85,000+', icon: Book, color: 'text-indigo-500', bg: 'bg-indigo-100 dark:bg-indigo-900/30' },
     { title: 'Placement Rate', value: '89%', icon: TrendingUp, color: 'text-red-500', bg: 'bg-red-100 dark:bg-red-900/30' },
   ]);
