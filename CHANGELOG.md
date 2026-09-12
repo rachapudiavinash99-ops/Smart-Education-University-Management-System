@@ -67,3 +67,4 @@
 - Add type hints to examination components
 - Refactor Campuses module for better performance
 - Update error handling in communication
+- Improve API response formatting in Campuses
