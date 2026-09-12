@@ -149,3 +149,4 @@
 - Improve API response formatting in attendance
 - Improve test coverage in Campuses
 - Fix minor linting issues in analytics
+- Add type hints to academics components
