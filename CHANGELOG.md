@@ -135,3 +135,4 @@
 - Standardize variable naming in faculty
 - Fix typo in academics documentation
 - Refine UI responsiveness in examination
+- Fix minor linting issues in Sidebar
