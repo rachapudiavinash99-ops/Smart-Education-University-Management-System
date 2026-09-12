@@ -60,3 +60,4 @@
 - Update Swagger schema for analytics
 - Enhance security checks in communication
 - Update Swagger schema for examination
+- Improve API response formatting in Dashboard
