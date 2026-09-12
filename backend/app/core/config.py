@@ -29,7 +29,8 @@ class Settings(BaseSettings):
 
     @property
     def SQLALCHEMY_DATABASE_URI(self) -> str:
-        return f"postgresql://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}@{self.POSTGRES_HOST}:{self.POSTGRES_PORT}/{self.POSTGRES_DB}"
+        # Fallback to SQLite for demonstration without Docker
+        return "sqlite:///./smart_university.db"
 
     REDIS_HOST: str = "localhost"
     REDIS_PORT: str = "6379"
