@@ -180,3 +180,4 @@
 - Improve API response formatting in communication
 - Enhance logging for users
 - Fix typo in lms documentation
+- Improve test coverage in Campuses
