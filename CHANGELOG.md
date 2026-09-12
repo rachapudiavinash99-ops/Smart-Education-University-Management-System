@@ -28,3 +28,4 @@
 - Add type hints to Sidebar components
 - Improve test coverage in Sidebar
 - Improve test coverage in faculty
+- Update error handling in Campuses
