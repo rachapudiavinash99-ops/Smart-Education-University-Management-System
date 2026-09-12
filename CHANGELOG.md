@@ -107,3 +107,4 @@
 - Standardize variable naming in Sidebar
 - Add comments explaining complex logic in Login
 - Refactor faculty module for better performance
+- Add unit test stubs for examination
