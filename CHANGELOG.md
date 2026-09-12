@@ -153,3 +153,4 @@
 - Refactor academics module for better performance
 - Update docstrings in faculty
 - Fix edge case in finance validation
+- Fix typo in academics documentation
