@@ -33,3 +33,4 @@
 - Improve API response formatting in lms
 - Add type hints to university components
 - Enhance logging for Dashboard
+- Add comments explaining complex logic in lms
