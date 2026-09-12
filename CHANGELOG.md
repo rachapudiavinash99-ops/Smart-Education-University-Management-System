@@ -105,3 +105,4 @@
 - Update Swagger schema for analytics
 - Update error handling in Dashboard
 - Standardize variable naming in Sidebar
+- Add comments explaining complex logic in Login
