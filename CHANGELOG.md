@@ -160,3 +160,4 @@
 - Update dependency configurations for finance
 - Improve test coverage in security
 - Refactor styling in finance components
+- Update docstrings in communication
