@@ -29,3 +29,4 @@
 - Improve test coverage in Sidebar
 - Improve test coverage in faculty
 - Update error handling in Campuses
+- Improve test coverage in communication
