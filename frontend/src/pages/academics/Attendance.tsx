@@ -3,10 +3,26 @@ import { CheckCircle, XCircle, Clock } from 'lucide-react';
 
 const Attendance = () => {
   const [students, setStudents] = useState([
-    { id: 1, name: 'Alice Smith', roll: 'CS20-001', status: 'PRESENT' },
-    { id: 2, name: 'Bob Jones', roll: 'CS20-002', status: 'ABSENT' },
-    { id: 3, name: 'Charlie Brown', roll: 'CS20-003', status: 'LATE' },
-    { id: 4, name: 'David Lee', roll: 'CS20-004', status: 'PRESENT' },
+    { id: 1, name: 'Aarav Patel', roll: 'CS20-001', status: 'PRESENT' },
+    { id: 2, name: 'Priya Sharma', roll: 'CS20-002', status: 'PRESENT' },
+    { id: 3, name: 'Rahul Kumar', roll: 'CS20-003', status: 'LATE' },
+    { id: 4, name: 'Ananya Singh', roll: 'CS20-004', status: 'PRESENT' },
+    { id: 5, name: 'Rohan Gupta', roll: 'CS20-005', status: 'PRESENT' },
+    { id: 6, name: 'Sneha Desai', roll: 'CS20-006', status: 'ABSENT' },
+    { id: 7, name: 'Vikram Malhotra', roll: 'CS20-007', status: 'PRESENT' },
+    { id: 8, name: 'Neha Reddy', roll: 'CS20-008', status: 'PRESENT' },
+    { id: 9, name: 'Aditya Joshi', roll: 'CS20-009', status: 'PRESENT' },
+    { id: 10, name: 'Kavya Iyer', roll: 'CS20-010', status: 'PRESENT' },
+    { id: 11, name: 'Karan Verma', roll: 'CS20-011', status: 'LATE' },
+    { id: 12, name: 'Pooja Nair', roll: 'CS20-012', status: 'PRESENT' },
+    { id: 13, name: 'Arjun Rao', roll: 'CS20-013', status: 'PRESENT' },
+    { id: 14, name: 'Riya Das', roll: 'CS20-014', status: 'ABSENT' },
+    { id: 15, name: 'Sidharth Menon', roll: 'CS20-015', status: 'PRESENT' },
+    { id: 16, name: 'Nisha Pillai', roll: 'CS20-016', status: 'PRESENT' },
+    { id: 17, name: 'Tarun Bhatia', roll: 'CS20-017', status: 'PRESENT' },
+    { id: 18, name: 'Meera Rajput', roll: 'CS20-018', status: 'LATE' },
+    { id: 19, name: 'Kunal Sen', roll: 'CS20-019', status: 'PRESENT' },
+    { id: 20, name: 'Ishita Agarwal', roll: 'CS20-020', status: 'PRESENT' },
   ]);
 
   const markAttendance = (id: number, status: string) => {

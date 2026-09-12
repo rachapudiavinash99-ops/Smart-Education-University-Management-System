@@ -3,9 +3,11 @@ import { CreditCard, Plus, Receipt, AlertCircle } from 'lucide-react';
 
 const Fees = () => {
   const [invoices, setInvoices] = useState([
-    { id: 1, invoiceNo: 'INV-A1B2C3D4', student: 'Alice Smith (CS20-001)', total: 5000, paid: 5000, status: 'PAID', due: '2024-01-15' },
-    { id: 2, invoiceNo: 'INV-X9Y8Z7W6', student: 'Bob Jones (CS20-002)', total: 5000, paid: 2500, status: 'PARTIAL', due: '2024-01-15' },
-    { id: 3, invoiceNo: 'INV-P4Q5R6S7', student: 'Charlie Brown (CS20-003)', total: 5000, paid: 0, status: 'OVERDUE', due: '2023-12-01' },
+    { id: 1, invoiceNo: 'INV-A1B2C3D4', student: 'Aarav Patel (CS20-001)', total: 50000, paid: 50000, status: 'PAID', due: '2024-01-15' },
+    { id: 2, invoiceNo: 'INV-X9Y8Z7W6', student: 'Priya Sharma (CS20-002)', total: 50000, paid: 25000, status: 'PARTIAL', due: '2024-01-15' },
+    { id: 3, invoiceNo: 'INV-P4Q5R6S7', student: 'Rahul Kumar (CS20-003)', total: 50000, paid: 0, status: 'OVERDUE', due: '2023-12-01' },
+    { id: 4, invoiceNo: 'INV-K9L8M7N6', student: 'Ananya Singh (CS20-004)', total: 50000, paid: 50000, status: 'PAID', due: '2024-01-15' },
+    { id: 5, invoiceNo: 'INV-Z1X2C3V4', student: 'Rohan Gupta (CS20-005)', total: 50000, paid: 10000, status: 'PARTIAL', due: '2024-01-15' },
   ]);
 
   const getStatusBadge = (status: string) => {
