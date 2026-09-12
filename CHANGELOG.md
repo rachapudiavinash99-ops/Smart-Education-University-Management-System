@@ -8,3 +8,4 @@
 - Update docstrings in corporate
 - Add unit test stubs for corporate
 - Enhance logging for Dashboard
+- Update error handling in academics
