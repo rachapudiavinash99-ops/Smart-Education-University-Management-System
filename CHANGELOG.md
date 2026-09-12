@@ -131,3 +131,4 @@
 - Update dependency configurations for infrastructure
 - Standardize variable naming in corporate
 - Update error handling in security
+- Refactor styling in Login components
