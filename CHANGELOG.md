@@ -162,3 +162,4 @@
 - Refactor styling in finance components
 - Update docstrings in communication
 - Optimize database queries in examination
+- Refactor styling in security components
