@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { CheckCircle, XCircle, Clock } from 'lucide-react';
 
 const CAMPUSES = ['Main Campus', 'North Campus', 'Chinni Education Unit', 'Commerce & Arts Wing'];
-const BRANCHES = ['Computer Science', 'Mechanical Engineering', 'Civil Engineering', 'Electrical Engineering', 'Electronics & Comm'];
+const ENG_BRANCHES = ['Computer Science', 'Mechanical Engineering', 'Civil Engineering', 'Electrical Engineering', 'Electronics & Comm'];
+const COMM_BRANCHES = ['B.Com (Hons)', 'BBA', 'BA English', 'BA Economics', 'B.Sc Finance'];
 const SECTIONS = ['A', 'B', 'C', 'D'];
 
 const FIRST_NAMES = ['Aarav', 'Priya', 'Rahul', 'Ananya', 'Rohan', 'Sneha', 'Vikram', 'Neha', 'Aditya', 'Kavya', 'Karan', 'Pooja', 'Arjun', 'Riya', 'Sidharth', 'Nisha', 'Tarun', 'Meera', 'Kunal', 'Ishita', 'Ranbir', 'Alia', 'Kartik', 'Kriti', 'Varun', 'Deepika', 'Sushant', 'Shraddha'];
@@ -10,10 +11,18 @@ const LAST_NAMES = ['Patel', 'Sharma', 'Kumar', 'Singh', 'Gupta', 'Desai', 'Malh
 
 export default function Attendance() {
   const [campus, setCampus] = useState(CAMPUSES[0]);
-  const [branch, setBranch] = useState(BRANCHES[0]);
+  const currentBranches = campus === 'Commerce & Arts Wing' ? COMM_BRANCHES : ENG_BRANCHES;
+  
+  const [branch, setBranch] = useState(currentBranches[0]);
   const [section, setSection] = useState(SECTIONS[0]);
   
   const [activeStudents, setActiveStudents] = useState<any[]>([]);
+
+  useEffect(() => {
+    if (!currentBranches.includes(branch)) {
+      setBranch(currentBranches[0]);
+    }
+  }, [campus]);
 
   // Generate 20 pseudo-random unique students whenever filters change
   useEffect(() => {
@@ -65,7 +74,7 @@ export default function Attendance() {
             value={branch}
             onChange={(e) => setBranch(e.target.value)}
           >
-            {BRANCHES.map(b => <option key={b} value={b}>{b}</option>)}
+            {currentBranches.map(b => <option key={b} value={b}>{b}</option>)}
           </select>
         </div>
         <div>

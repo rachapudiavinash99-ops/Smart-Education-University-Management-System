@@ -2,15 +2,24 @@ import React, { useState, useEffect } from 'react';
 import { FileText, Plus, Download, MessageSquare } from 'lucide-react';
 
 const CAMPUSES = ['Main Campus', 'North Campus', 'Chinni Education Unit', 'Commerce & Arts Wing'];
-const BRANCHES = ['Computer Science', 'Mechanical Engineering', 'Civil Engineering', 'Electrical Engineering', 'Electronics & Comm'];
+const ENG_BRANCHES = ['Computer Science', 'Mechanical Engineering', 'Civil Engineering', 'Electrical Engineering', 'Electronics & Comm'];
+const COMM_BRANCHES = ['B.Com (Hons)', 'BBA', 'BA English', 'BA Economics', 'B.Sc Finance'];
 const SECTIONS = ['A', 'B', 'C', 'D'];
 
 export default function Assignments() {
   const [campus, setCampus] = useState(CAMPUSES[0]);
-  const [branch, setBranch] = useState(BRANCHES[0]);
+  const currentBranches = campus === 'Commerce & Arts Wing' ? COMM_BRANCHES : ENG_BRANCHES;
+  
+  const [branch, setBranch] = useState(currentBranches[0]);
   const [section, setSection] = useState(SECTIONS[0]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeAssignments, setActiveAssignments] = useState<any[]>([]);
+
+  useEffect(() => {
+    if (!currentBranches.includes(branch)) {
+      setBranch(currentBranches[0]);
+    }
+  }, [campus]);
 
   useEffect(() => {
     // Generate assignments specific to the branch and campus
@@ -56,7 +65,7 @@ export default function Assignments() {
             value={branch}
             onChange={(e) => setBranch(e.target.value)}
           >
-            {BRANCHES.map(b => <option key={b} value={b}>{b}</option>)}
+            {currentBranches.map(b => <option key={b} value={b}>{b}</option>)}
           </select>
         </div>
         <div>
