@@ -130,3 +130,4 @@
 - Standardize variable naming in auth
 - Update dependency configurations for infrastructure
 - Standardize variable naming in corporate
+- Update error handling in security
