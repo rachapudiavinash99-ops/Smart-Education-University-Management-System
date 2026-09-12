@@ -144,3 +144,4 @@
 - Refactor university module for better performance
 - Refactor styling in finance components
 - Clean up unused imports in Login
+- Fix typo in academics documentation
