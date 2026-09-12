@@ -178,3 +178,4 @@
 - Add comments explaining complex logic in corporate
 - Fix typo in users documentation
 - Improve API response formatting in communication
+- Enhance logging for users
