@@ -33,3 +33,8 @@ from .corporate import (
     PlacementApplicationBase, PlacementApplicationCreate, PlacementApplicationResponse,
     UniversityEventBase, UniversityEventCreate, UniversityEventResponse
 )
+from .communication import (
+    AnnouncementBase, AnnouncementCreate, AnnouncementResponse,
+    NotificationBase, NotificationCreate, NotificationResponse,
+    DirectMessageBase, DirectMessageCreate, DirectMessageResponse
+)

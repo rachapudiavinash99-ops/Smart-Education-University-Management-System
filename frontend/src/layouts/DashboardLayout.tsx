@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, Users, BookOpen, LogOut, Building2, CalendarCheck, FileText, Award, CreditCard, Server, Briefcase } from 'lucide-react';
+import { LayoutDashboard, Users, BookOpen, LogOut, Building2, CalendarCheck, FileText, Award, CreditCard, Server, Briefcase, Bell } from 'lucide-react';
 
 const DashboardLayout = () => {
   const navigate = useNavigate();
@@ -53,6 +53,10 @@ const DashboardLayout = () => {
           <Link to="/dashboard/placements" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
             <Briefcase size={20} />
             <span>Placements & Jobs</span>
+          </Link>
+          <Link to="/dashboard/communications" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
+            <Bell size={20} />
+            <span>Communications</span>
           </Link>
           <Link to="/dashboard/courses" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
             <BookOpen size={20} />
