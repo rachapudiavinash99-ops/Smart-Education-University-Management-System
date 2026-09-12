@@ -83,3 +83,4 @@
 - Refine UI responsiveness in auth
 - Add type hints to communication components
 - Add type hints to Dashboard components
+- Refactor styling in academics components
