@@ -121,3 +121,4 @@
 - Update dependency configurations for users
 - Update error handling in corporate
 - Refactor Campuses module for better performance
+- Update Swagger schema for academics
