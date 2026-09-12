@@ -12,3 +12,4 @@
 - Fix minor linting issues in corporate
 - Enhance security checks in Login
 - Enhance logging for analytics
+- Refactor styling in Sidebar components
