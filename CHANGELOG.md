@@ -173,3 +173,4 @@
 - Update Swagger schema for faculty
 - Update docstrings in auth
 - Update Swagger schema for infrastructure
+- Refactor infrastructure module for better performance
