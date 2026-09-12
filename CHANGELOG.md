@@ -68,3 +68,4 @@
 - Refactor Campuses module for better performance
 - Update error handling in communication
 - Improve API response formatting in Campuses
+- Update dependency configurations for Dashboard
