@@ -32,3 +32,4 @@
 - Improve test coverage in communication
 - Improve API response formatting in lms
 - Add type hints to university components
+- Enhance logging for Dashboard
