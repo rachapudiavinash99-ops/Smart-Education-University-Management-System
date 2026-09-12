@@ -168,3 +168,4 @@
 - Optimize database queries in auth
 - Fix typo in corporate documentation
 - Standardize variable naming in faculty
+- Refine UI responsiveness in attendance
