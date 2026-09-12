@@ -155,3 +155,4 @@
 - Fix edge case in finance validation
 - Fix typo in academics documentation
 - Improve API response formatting in Campuses
+- Enhance security checks in communication
