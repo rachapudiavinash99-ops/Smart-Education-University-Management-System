@@ -170,3 +170,4 @@
 - Standardize variable naming in faculty
 - Refine UI responsiveness in attendance
 - Add comments explaining complex logic in examination
+- Update Swagger schema for faculty
