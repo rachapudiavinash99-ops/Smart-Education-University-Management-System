@@ -20,7 +20,7 @@ const Login = () => {
           Sign in to your account
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
-          Smart Education & University Management System
+          University Management System
         </p>
       </div>
 

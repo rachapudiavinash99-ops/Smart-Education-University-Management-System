@@ -15,7 +15,7 @@ const DashboardLayout = () => {
       {/* Sidebar */}
       <aside className="w-64 bg-white dark:bg-gray-800 shadow-md flex flex-col">
         <div className="p-4 border-b border-gray-200 dark:border-gray-700">
-          <h1 className="text-xl font-bold text-gray-800 dark:text-white">Smart Univ</h1>
+          <h1 className="text-xl font-bold text-gray-800 dark:text-white">University Management</h1>
         </div>
         <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
           <Link to="/dashboard" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded-md">
