@@ -58,3 +58,4 @@
 - Fix edge case in attendance validation
 - Fix typo in finance documentation
 - Update Swagger schema for analytics
+- Enhance security checks in communication
