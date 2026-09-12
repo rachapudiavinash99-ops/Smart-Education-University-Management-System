@@ -119,3 +119,4 @@
 - Update dependency configurations for Sidebar
 - Enhance logging for university
 - Update dependency configurations for users
+- Update error handling in corporate
