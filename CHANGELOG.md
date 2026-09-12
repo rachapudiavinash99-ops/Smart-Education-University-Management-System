@@ -98,3 +98,4 @@
 - Update docstrings in lms
 - Fix minor linting issues in finance
 - Improve test coverage in analytics
+- Add unit test stubs for academics
