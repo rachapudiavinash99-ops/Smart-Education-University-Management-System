@@ -11,3 +11,4 @@
 - Update error handling in academics
 - Fix minor linting issues in corporate
 - Enhance security checks in Login
+- Enhance logging for analytics
