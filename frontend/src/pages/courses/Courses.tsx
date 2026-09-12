@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
 import { BookOpen, Search, Plus, Edit, Trash2 } from 'lucide-react';
 
+const CAMPUSES = ['Main Campus', 'North Campus', 'Chinni Education Unit', 'Commerce & Arts Wing'];
+
 const Courses = () => {
+  const [activeCampus, setActiveCampus] = useState(CAMPUSES[0]);
   const [activeTab, setActiveTab] = useState('All');
-  const [courses] = useState([
+  
+  const isCommerceWing = activeCampus === 'Commerce & Arts Wing';
+  
+  const courses = isCommerceWing ? [
+    { id: 'BCOM101', name: 'B.Com (Hons)', department: 'Commerce', credits: 140, duration: '3 Years' },
+    { id: 'BA201', name: 'BA English Literature', department: 'Arts', credits: 120, duration: '3 Years' },
+    { id: 'BA202', name: 'BA Economics', department: 'Arts', credits: 120, duration: '3 Years' },
+    { id: 'BBA101', name: 'Bachelor of Business Administration', department: 'Management', credits: 120, duration: '3 Years' },
+    { id: 'BSC301', name: 'B.Sc Finance', department: 'Commerce', credits: 130, duration: '3 Years' },
+  ] : [
     { id: 'CS101', name: 'B.Tech Computer Science Engineering', department: 'Engineering', credits: 160, duration: '4 Years' },
     { id: 'ME201', name: 'B.Tech Mechanical Engineering', department: 'Engineering', credits: 160, duration: '4 Years' },
     { id: 'EE301', name: 'B.Tech Electrical Engineering', department: 'Engineering', credits: 160, duration: '4 Years' },
@@ -12,10 +24,15 @@ const Courses = () => {
     { id: 'BCA101', name: 'Bachelor of Computer Applications', department: 'Computer Applications', credits: 120, duration: '3 Years' },
     { id: 'MCA201', name: 'Master of Computer Applications', department: 'Computer Applications', credits: 80, duration: '2 Years' },
     { id: 'BSC101', name: 'B.Sc Physics (Hons)', department: 'Sciences', credits: 120, duration: '3 Years' },
-  ]);
+  ];
 
-  const departments = ['All', 'Engineering', 'Management', 'Computer Applications', 'Sciences'];
+  const departments = ['All', ...Array.from(new Set(courses.map(c => c.department)))];
   
+  // Reset tab to 'All' when campus changes to avoid empty states
+  React.useEffect(() => {
+    setActiveTab('All');
+  }, [activeCampus]);
+
   const filteredCourses = activeTab === 'All' 
     ? courses 
     : courses.filter(c => c.department === activeTab);
@@ -26,7 +43,14 @@ const Courses = () => {
         <h3 className="text-2xl font-semibold text-gray-800 dark:text-white flex items-center">
           <BookOpen className="mr-2 text-amber-500" /> Courses & Curriculum
         </h3>
-        <div className="flex space-x-3">
+        <div className="flex space-x-3 items-center">
+          <select 
+            className="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-md px-4 py-2 shadow-sm focus:ring-amber-500 focus:border-amber-500"
+            value={activeCampus}
+            onChange={(e) => setActiveCampus(e.target.value)}
+          >
+            {CAMPUSES.map(c => <option key={c} value={c}>{c}</option>)}
+          </select>
           <div className="relative">
             <input
               type="text"
