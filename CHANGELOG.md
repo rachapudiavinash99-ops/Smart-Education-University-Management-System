@@ -22,3 +22,4 @@
 - Fix edge case in examination validation
 - Update docstrings in Sidebar
 - Add type hints to faculty components
+- Improve test coverage in analytics
