@@ -184,3 +184,4 @@
 - Update Swagger schema for lms
 - Update error handling in users
 - Fix edge case in academics validation
+- Update error handling in security
