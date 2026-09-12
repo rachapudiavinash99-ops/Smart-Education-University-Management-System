@@ -88,3 +88,4 @@
 - Update docstrings in finance
 - Fix typo in infrastructure documentation
 - Update error handling in university
+- Refactor styling in corporate components
