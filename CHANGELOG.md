@@ -87,3 +87,4 @@
 - Fix typo in academics documentation
 - Update docstrings in finance
 - Fix typo in infrastructure documentation
+- Update error handling in university
