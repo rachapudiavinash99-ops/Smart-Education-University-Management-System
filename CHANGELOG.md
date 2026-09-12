@@ -18,3 +18,4 @@
 - Optimize database queries in academics
 - Improve test coverage in users
 - Update error handling in users
+- Update error handling in Campuses
