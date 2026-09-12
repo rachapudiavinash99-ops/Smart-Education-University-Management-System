@@ -3,8 +3,13 @@ import { Award, Plus, FileText, CheckCircle } from 'lucide-react';
 
 const Examinations = () => {
   const [exams, setExams] = useState([
-    { id: 1, name: 'Fall 2024 Midterms', type: 'MIDTERM', semester: 'Fall 2024', status: 'Draft' },
-    { id: 2, name: 'Spring 2024 Finals', type: 'SEMESTER', semester: 'Spring 2024', status: 'Published' },
+    { id: 1, name: 'B.Tech Even Semester Finals', type: 'SEMESTER', semester: 'Even Semester 2024', status: 'Draft' },
+    { id: 2, name: 'MBA Odd Semester Finals', type: 'SEMESTER', semester: 'Odd Semester 2024', status: 'Published' },
+    { id: 3, name: 'CS102 Internal Assessment 1', type: 'INTERNAL', semester: 'Even Semester 2024', status: 'Published' },
+    { id: 4, name: 'CS102 Internal Assessment 2', type: 'INTERNAL', semester: 'Even Semester 2024', status: 'Draft' },
+    { id: 5, name: 'ME201 Midterms', type: 'MIDTERM', semester: 'Even Semester 2024', status: 'Published' },
+    { id: 6, name: 'University Entrance Test (UET)', type: 'ENTRANCE', semester: 'Fall 2025 Intake', status: 'Published' },
+    { id: 7, name: 'BCA Final Year Practicals', type: 'PRACTICAL', semester: 'Even Semester 2024', status: 'Published' },
   ]);
 
   return (

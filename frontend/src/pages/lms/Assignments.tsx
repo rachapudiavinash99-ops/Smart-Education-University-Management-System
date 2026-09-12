@@ -3,8 +3,14 @@ import { FileText, Plus, Download, MessageSquare } from 'lucide-react';
 
 const Assignments = () => {
   const [assignments, setAssignments] = useState([
-    { id: 1, title: 'Data Structures Project', subject: 'CS102', deadline: '2024-05-15', status: 'PUBLISHED', submissions: 45 },
-    { id: 2, title: 'Network OSI Model Essay', subject: 'CS201', deadline: '2024-06-01', status: 'DRAFT', submissions: 0 },
+    { id: 1, title: 'Data Structures Capstone Project', subject: 'CS102', deadline: '2024-05-15', status: 'PUBLISHED', submissions: 45, max: 60 },
+    { id: 2, title: 'Network OSI Model Essay', subject: 'CS201', deadline: '2024-06-01', status: 'DRAFT', submissions: 0, max: 60 },
+    { id: 3, title: 'Compiler Design Lexical Analyzer', subject: 'CS305', deadline: '2024-04-20', status: 'PUBLISHED', submissions: 58, max: 60 },
+    { id: 4, title: 'Machine Learning Model Deployment', subject: 'CS401', deadline: '2024-05-10', status: 'PUBLISHED', submissions: 32, max: 60 },
+    { id: 5, title: 'Thermodynamics Lab Report', subject: 'ME201', deadline: '2024-05-05', status: 'PUBLISHED', submissions: 55, max: 60 },
+    { id: 6, title: 'Financial Accounting Case Study', subject: 'MBA101', deadline: '2024-06-15', status: 'DRAFT', submissions: 0, max: 45 },
+    { id: 7, title: 'Operating Systems Shell Scripting', subject: 'CS205', deadline: '2024-04-25', status: 'PUBLISHED', submissions: 60, max: 60 },
+    { id: 8, title: 'Engineering Drawing Assignment', subject: 'CE101', deadline: '2024-05-02', status: 'PUBLISHED', submissions: 40, max: 60 },
   ]);
 
   return (
@@ -36,7 +42,7 @@ const Assignments = () => {
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">{assignment.title}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">{assignment.subject}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">{assignment.deadline}</td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-center text-gray-900 dark:text-white font-medium">{assignment.submissions} / 60</td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-center text-gray-900 dark:text-white font-medium">{assignment.submissions} / {assignment.max}</td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${assignment.status === 'PUBLISHED' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' : 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300'}`}>
                     {assignment.status}
