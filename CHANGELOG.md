@@ -134,3 +134,4 @@
 - Refactor styling in Login components
 - Standardize variable naming in faculty
 - Fix typo in academics documentation
+- Refine UI responsiveness in examination
