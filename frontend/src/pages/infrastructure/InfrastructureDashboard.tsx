@@ -2,25 +2,59 @@ import React, { useState } from 'react';
 import { Book, Home, Bus, Plus, Search, CheckCircle } from 'lucide-react';
 
 const InfrastructureDashboard = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('library');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+  // Form State
+  const [formData, setFormData] = useState({ field1: '', field2: '', field3: '' });
 
-  const libraryBooks = [
+  const [libraryBooks, setLibraryBooks] = useState([
     { id: 'LIB-001', title: 'Data Structures in C++', author: 'Yashavant Kanetkar', available: 12, total: 15 },
     { id: 'LIB-002', title: 'Operating Systems', author: 'Galvin', available: 4, total: 10 },
     { id: 'LIB-003', title: 'Engineering Mathematics', author: 'B.S. Grewal', available: 20, total: 25 },
-  ];
+  ]);
 
-  const hostelRooms = [
+  const [hostelRooms, setHostelRooms] = useState([
     { room: 'A-101', type: '2-Seater', capacity: 2, occupied: 2, warden: 'Mr. Ramesh' },
     { room: 'A-102', type: '2-Seater', capacity: 2, occupied: 1, warden: 'Mr. Ramesh' },
     { room: 'B-205', type: '4-Seater', capacity: 4, occupied: 4, warden: 'Mr. Suresh' },
-  ];
+  ]);
 
-  const transportRoutes = [
+  const [transportRoutes, setTransportRoutes] = useState([
     { id: 'RT-01', route: 'City Center -> Campus', driver: 'Mahesh Kumar', busNo: 'TS 09 AB 1234', capacity: 50 },
     { id: 'RT-02', route: 'North Station -> Campus', driver: 'Rajesh Singh', busNo: 'TS 09 XY 9876', capacity: 45 },
-  ];
+  ]);
+
+  const handleSave = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (activeTab === 'library') {
+      setLibraryBooks([...libraryBooks, {
+        id: `LIB-00${libraryBooks.length + 1}`,
+        title: formData.field1 || 'Untitled Book',
+        author: formData.field2 || 'Unknown Author',
+        available: parseInt(formData.field3) || 1,
+        total: parseInt(formData.field3) || 1
+      }]);
+    } else if (activeTab === 'hostel') {
+      setHostelRooms([...hostelRooms, {
+        room: formData.field1 || 'New Room',
+        type: formData.field2 || 'Single',
+        capacity: parseInt(formData.field3) || 1,
+        occupied: 0,
+        warden: 'Pending'
+      }]);
+    } else if (activeTab === 'transport') {
+      setTransportRoutes([...transportRoutes, {
+        id: `RT-0${transportRoutes.length + 1}`,
+        route: formData.field1 || 'New Route',
+        driver: formData.field2 || 'Pending Driver',
+        busNo: formData.field3 || 'TS XX XX XXXX',
+        capacity: 50
+      }]);
+    }
+    setFormData({ field1: '', field2: '', field3: '' });
+    setIsModalOpen(false);
+  };
 
   return (
     <div>
@@ -132,28 +166,52 @@ const InfrastructureDashboard = () => {
         </div>
       )}
 
-      {/* Dynamic Action Modal */}
+      {/* Dynamic Action Modal with Working Form */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-md p-6">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Add Record</h3>
-            <p className="text-gray-500 dark:text-gray-400 mb-6">
-              This form module is currently in read-only mode for this demo.
-            </p>
-            <div className="flex justify-end space-x-3">
-              <button 
-                onClick={() => setIsModalOpen(false)}
-                className="px-4 py-2 bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white rounded-md hover:bg-gray-300 dark:hover:bg-gray-600"
-              >
-                Cancel
-              </button>
-              <button 
-                onClick={() => setIsModalOpen(false)}
-                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
-              >
-                Save
-              </button>
-            </div>
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+              Add New {activeTab === 'library' ? 'Book' : activeTab === 'hostel' ? 'Room' : 'Route'}
+            </h3>
+            
+            <form onSubmit={handleSave}>
+              <div className="space-y-4 mb-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    {activeTab === 'library' ? 'Book Title' : activeTab === 'hostel' ? 'Room No' : 'Route Path'}
+                  </label>
+                  <input required type="text" value={formData.field1} onChange={e => setFormData({...formData, field1: e.target.value})} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    {activeTab === 'library' ? 'Author' : activeTab === 'hostel' ? 'Room Type (e.g. 2-Seater)' : 'Driver Name'}
+                  </label>
+                  <input required type="text" value={formData.field2} onChange={e => setFormData({...formData, field2: e.target.value})} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    {activeTab === 'library' ? 'Total Copies' : activeTab === 'hostel' ? 'Capacity' : 'Bus Number Plate'}
+                  </label>
+                  <input required type={activeTab === 'transport' ? "text" : "number"} value={formData.field3} onChange={e => setFormData({...formData, field3: e.target.value})} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 bg-white dark:bg-gray-700 text-gray-900 dark:text-white" />
+                </div>
+              </div>
+
+              <div className="flex justify-end space-x-3">
+                <button 
+                  type="button"
+                  onClick={() => setIsModalOpen(false)}
+                  className="px-4 py-2 bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-white rounded-md hover:bg-gray-300 dark:hover:bg-gray-600"
+                >
+                  Cancel
+                </button>
+                <button 
+                  type="submit"
+                  className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+                >
+                  Save Record
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}
