@@ -36,3 +36,4 @@
 - Add comments explaining complex logic in lms
 - Add type hints to faculty components
 - Optimize database queries in Dashboard
+- Enhance logging for university
