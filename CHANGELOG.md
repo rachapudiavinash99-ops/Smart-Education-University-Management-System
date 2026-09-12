@@ -114,3 +114,4 @@
 - Add comments explaining complex logic in Dashboard
 - Refine UI responsiveness in corporate
 - Refactor styling in infrastructure components
+- Standardize variable naming in university
