@@ -82,3 +82,4 @@
 - Fix typo in analytics documentation
 - Refine UI responsiveness in auth
 - Add type hints to communication components
+- Add type hints to Dashboard components
