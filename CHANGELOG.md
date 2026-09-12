@@ -46,3 +46,4 @@
 - Fix typo in finance documentation
 - Improve API response formatting in infrastructure
 - Add unit test stubs for infrastructure
+- Standardize variable naming in finance
