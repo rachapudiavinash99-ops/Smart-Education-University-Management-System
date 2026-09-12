@@ -86,3 +86,4 @@
 - Refactor styling in academics components
 - Fix typo in academics documentation
 - Update docstrings in finance
+- Fix typo in infrastructure documentation
