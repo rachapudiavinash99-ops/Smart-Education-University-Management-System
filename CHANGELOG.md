@@ -14,3 +14,4 @@
 - Enhance logging for analytics
 - Refactor styling in Sidebar components
 - Add type hints to Campuses components
+- Enhance logging for security
