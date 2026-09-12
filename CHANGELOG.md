@@ -31,3 +31,4 @@
 - Update error handling in Campuses
 - Improve test coverage in communication
 - Improve API response formatting in lms
+- Add type hints to university components
