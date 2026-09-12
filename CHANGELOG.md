@@ -182,3 +182,4 @@
 - Fix typo in lms documentation
 - Improve test coverage in Campuses
 - Update Swagger schema for lms
+- Update error handling in users
