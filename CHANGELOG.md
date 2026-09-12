@@ -20,3 +20,4 @@
 - Update error handling in users
 - Update error handling in Campuses
 - Fix edge case in examination validation
+- Update docstrings in Sidebar
