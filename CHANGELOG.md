@@ -111,3 +111,4 @@
 - Enhance security checks in corporate
 - Fix minor linting issues in attendance
 - Improve API response formatting in academics
+- Add comments explaining complex logic in Dashboard
