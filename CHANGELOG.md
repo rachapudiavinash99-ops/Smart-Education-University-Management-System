@@ -40,3 +40,4 @@
 - Refactor Campuses module for better performance
 - Refine UI responsiveness in lms
 - Refactor styling in corporate components
+- Standardize variable naming in attendance
