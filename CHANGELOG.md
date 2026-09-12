@@ -62,3 +62,4 @@
 - Update Swagger schema for examination
 - Improve API response formatting in Dashboard
 - Refactor styling in finance components
+- Improve API response formatting in faculty
