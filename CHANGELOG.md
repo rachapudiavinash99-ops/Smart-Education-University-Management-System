@@ -23,3 +23,4 @@
 - Update docstrings in Sidebar
 - Add type hints to faculty components
 - Improve test coverage in analytics
+- Add unit test stubs for finance
