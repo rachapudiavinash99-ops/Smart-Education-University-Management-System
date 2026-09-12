@@ -16,3 +16,4 @@
 - Add type hints to Campuses components
 - Enhance logging for security
 - Optimize database queries in academics
+- Improve test coverage in users
