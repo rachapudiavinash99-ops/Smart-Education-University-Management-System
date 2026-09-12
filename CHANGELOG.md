@@ -44,3 +44,4 @@
 - Improve test coverage in finance
 - Update Swagger schema for lms
 - Fix typo in finance documentation
+- Improve API response formatting in infrastructure
