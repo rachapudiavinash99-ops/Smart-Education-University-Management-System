@@ -132,3 +132,4 @@
 - Standardize variable naming in corporate
 - Update error handling in security
 - Refactor styling in Login components
+- Standardize variable naming in faculty
