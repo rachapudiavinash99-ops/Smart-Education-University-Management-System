@@ -79,3 +79,4 @@
 - Fix typo in auth documentation
 - Update error handling in examination
 - Update error handling in university
+- Fix typo in analytics documentation
