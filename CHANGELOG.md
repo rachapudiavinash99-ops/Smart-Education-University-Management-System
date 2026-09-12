@@ -64,3 +64,4 @@
 - Refactor styling in finance components
 - Improve API response formatting in faculty
 - Refine UI responsiveness in Dashboard
+- Add type hints to examination components
