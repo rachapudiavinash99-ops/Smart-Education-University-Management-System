@@ -6,7 +6,7 @@ const Campuses = () => {
   const [campuses, setCampuses] = useState([
     { id: 1, name: 'Main Campus', city: 'Hyderabad', status: 'Active' },
     { id: 2, name: 'North Campus', city: 'Delhi', status: 'Active' },
-    { id: 3, name: 'Tech Park Campus', city: 'Bangalore', status: 'Active' },
+    { id: 3, name: 'Chinni Education Unit', city: 'Chennai', status: 'Active' },
     { id: 4, name: 'Commerce & Arts Wing', city: 'Mumbai', status: 'Under Maintenance' },
   ]);
 
