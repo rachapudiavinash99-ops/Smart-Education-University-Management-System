@@ -102,3 +102,4 @@
 - Enhance security checks in analytics
 - Optimize database queries in Login
 - Refine UI responsiveness in users
+- Update Swagger schema for analytics
