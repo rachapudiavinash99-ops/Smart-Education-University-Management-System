@@ -136,3 +136,4 @@
 - Fix typo in academics documentation
 - Refine UI responsiveness in examination
 - Fix minor linting issues in Sidebar
+- Add comments explaining complex logic in users
