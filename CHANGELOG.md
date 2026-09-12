@@ -39,3 +39,4 @@
 - Enhance logging for university
 - Refactor Campuses module for better performance
 - Refine UI responsiveness in lms
+- Refactor styling in corporate components
