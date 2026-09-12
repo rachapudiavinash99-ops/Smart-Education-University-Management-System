@@ -42,3 +42,4 @@
 - Refactor styling in corporate components
 - Standardize variable naming in attendance
 - Improve test coverage in finance
+- Update Swagger schema for lms
