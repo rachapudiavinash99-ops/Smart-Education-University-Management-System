@@ -43,3 +43,4 @@
 - Standardize variable naming in attendance
 - Improve test coverage in finance
 - Update Swagger schema for lms
+- Fix typo in finance documentation
