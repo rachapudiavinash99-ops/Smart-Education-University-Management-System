@@ -76,3 +76,4 @@
 - Update error handling in examination
 - Fix minor linting issues in analytics
 - Enhance security checks in users
+- Fix typo in auth documentation
