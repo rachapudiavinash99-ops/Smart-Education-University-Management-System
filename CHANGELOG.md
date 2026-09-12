@@ -125,3 +125,4 @@
 - Add comments explaining complex logic in lms
 - Refactor Dashboard module for better performance
 - Add comments explaining complex logic in examination
+- Update dependency configurations for auth
