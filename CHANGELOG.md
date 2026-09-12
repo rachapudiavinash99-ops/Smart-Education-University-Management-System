@@ -146,3 +146,4 @@
 - Clean up unused imports in Login
 - Fix typo in academics documentation
 - Fix minor linting issues in corporate
+- Improve API response formatting in attendance
