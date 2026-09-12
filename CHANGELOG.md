@@ -137,3 +137,4 @@
 - Refine UI responsiveness in examination
 - Fix minor linting issues in Sidebar
 - Add comments explaining complex logic in users
+- Update error handling in academics
