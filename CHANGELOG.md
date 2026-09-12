@@ -27,3 +27,4 @@
 - Clean up unused imports in infrastructure
 - Add type hints to Sidebar components
 - Improve test coverage in Sidebar
+- Improve test coverage in faculty
