@@ -150,3 +150,4 @@
 - Improve test coverage in Campuses
 - Fix minor linting issues in analytics
 - Add type hints to academics components
+- Refactor academics module for better performance
