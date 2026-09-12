@@ -176,3 +176,4 @@
 - Refactor infrastructure module for better performance
 - Fix minor linting issues in infrastructure
 - Add comments explaining complex logic in corporate
+- Fix typo in users documentation
