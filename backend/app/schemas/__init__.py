@@ -7,3 +7,4 @@ from .university import (
 )
 from .academics import SubjectBase, SubjectCreate, SubjectResponse, SectionBase, SectionCreate, SectionResponse
 from .faculty import FacultyProfileBase, FacultyProfileCreate, FacultyProfileResponse
+from .attendance import AttendanceBase, AttendanceCreate, AttendanceResponse, AttendanceSummary

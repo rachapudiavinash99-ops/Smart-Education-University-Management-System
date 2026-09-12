@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import DashboardLayout from './layouts/DashboardLayout';
 import Dashboard from './pages/Dashboard';
 import Campuses from './pages/university/Campuses';
+import Attendance from './pages/academics/Attendance';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="campuses" element={<Campuses />} />
+          <Route path="attendance" element={<Attendance />} />
           {/* Add more nested routes here in the future */}
         </Route>
         
