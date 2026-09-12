@@ -90,3 +90,4 @@
 - Update error handling in university
 - Refactor styling in corporate components
 - Standardize variable naming in analytics
+- Standardize variable naming in analytics
