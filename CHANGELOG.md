@@ -54,3 +54,4 @@
 - Fix minor linting issues in university
 - Refactor styling in faculty components
 - Refine UI responsiveness in Campuses
+- Improve test coverage in infrastructure
