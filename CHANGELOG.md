@@ -113,3 +113,4 @@
 - Improve API response formatting in academics
 - Add comments explaining complex logic in Dashboard
 - Refine UI responsiveness in corporate
+- Refactor styling in infrastructure components
