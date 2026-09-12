@@ -12,3 +12,8 @@ from .lms import (
     AssignmentBase, AssignmentCreate, AssignmentResponse,
     SubmissionBase, SubmissionCreate, SubmissionGrade, SubmissionResponse
 )
+from .examination import (
+    ExamBase, ExamCreate, ExamResponse,
+    ExamScheduleBase, ExamScheduleCreate, ExamScheduleResponse,
+    ExamResultBase, ExamResultCreate, ExamResultResponse
+)
