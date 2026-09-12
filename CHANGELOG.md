@@ -158,3 +158,4 @@
 - Enhance security checks in communication
 - Add type hints to finance components
 - Update dependency configurations for finance
+- Improve test coverage in security
