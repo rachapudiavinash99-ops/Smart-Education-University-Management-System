@@ -97,3 +97,4 @@
 - Add comments explaining complex logic in Campuses
 - Update docstrings in lms
 - Fix minor linting issues in finance
+- Improve test coverage in analytics
