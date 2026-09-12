@@ -5,3 +5,5 @@ from .university import (
     DepartmentBase, DepartmentCreate, DepartmentResponse,
     ProgramBase, ProgramCreate, ProgramResponse
 )
+from .academics import SubjectBase, SubjectCreate, SubjectResponse, SectionBase, SectionCreate, SectionResponse
+from .faculty import FacultyProfileBase, FacultyProfileCreate, FacultyProfileResponse
