@@ -172,3 +172,4 @@
 - Add comments explaining complex logic in examination
 - Update Swagger schema for faculty
 - Update docstrings in auth
+- Update Swagger schema for infrastructure
