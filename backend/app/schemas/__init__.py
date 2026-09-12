@@ -22,3 +22,8 @@ from .finance import (
     FeeInvoiceBase, FeeInvoiceCreate, FeeInvoiceResponse,
     FeePaymentBase, FeePaymentCreate, FeePaymentResponse
 )
+from .infrastructure import (
+    LibraryBookBase, LibraryBookCreate, LibraryBookResponse,
+    HostelBase, HostelCreate, HostelResponse,
+    TransportRouteBase, TransportRouteCreate, TransportRouteResponse
+)
